@@ -14,6 +14,11 @@ public class Main {
         Figure Rectangle = new Figure(2,5);
 
         System.out.println("Side a is: " + side_a);
+
+        System.out.println("hello");
+        System.out.println("hello");
+        System.out.println("hello");
     }
 //    12112313123
+    
 }
