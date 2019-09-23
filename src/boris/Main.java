@@ -16,10 +16,9 @@ public class Main {
         System.out.println("Side a is: " + side_a);
 
         System.out.println("hello");
-        System.out.println("hello");
-        System.out.println("hello");
+
 
     }
-//    12112313123
+
 
 }
