@@ -10,19 +10,18 @@ public class Parallelepiped extends Figure {
 
 
 
-    public Parallelepiped(double side_a, double side_b, double side_a1, double side_b1, double side_c) {
-        super(side_a, side_b);
-        this.side_a = side_a1;
-        this.side_b = side_b1;
+    public Parallelepiped(double side_a, double side_b, double side_c) {
+        super(side_a, side_b, side_c);
+        this.side_a = side_a;
+        this.side_b = side_b;
         this.side_c = side_c;
     }
 
-    public double Area(double side_a, double side_b, double side_c, int SIMILAR_EDGES){
-        return (side_a * side_b + side_b * side_c + side_c * side_a) * SIMILAR_EDGES;
-    }
+//    Площадь   (Я метод перегрузил, кста)
+    public double Area(double side_a, double side_b, double side_c, int SIMILAR_EDGES){ return (side_a * side_b + side_b * side_c + side_c * side_a) * SIMILAR_EDGES; }
 
+//    Объем
     public double Volume(double side_a, double side_b, double side_c){
         return side_a * side_b * side_c;
     }
-
 }
