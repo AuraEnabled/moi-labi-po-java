@@ -1,26 +1,35 @@
 package boris;
-
-import boris.Classes.Figure;
-import boris.Classes.Figures;
 import boris.Classes.Parallelepiped;
+import boris.Classes.Rectangle;
 
+import java.util.Scanner;
 
 public class Main {
 
-//      Начальные параметры
-    private static double side_a =2.0d;
-    private static double side_b =5.0d;
-    private static double side_c =4.0d;
+    private static double a_side;
+    private static double b_side;
+    private static double c_side;
+
 
     public static void main(String[] args) {
+        System.out.println("Set \"a\" length");
+        Scanner aInner = new Scanner(System.in);
+        System.out.println("Set \"b\" length");
+        Scanner bInner = new Scanner(System.in);
+        System.out.println("Set \"с\" length");
+        Scanner cInner = new Scanner(System.in);
 
-//      Определение фигуры
-        if(side_c != 0){
-            Parallelepiped parallelepiped = new Parallelepiped(side_a, side_b, side_c);
-        }else{
-            Figure Rectangle = new Figure(side_a, side_b, 0);
+        a_side = aInner.nextDouble();
+        b_side = bInner.nextDouble();
+        c_side = cInner.nextDouble();
+
+        if(c_side < 1e-6) {
+            Rectangle rectangle = new Rectangle(a_side, b_side);
+            rectangle.Outputting();
+        }else {
+            Parallelepiped parallelepiped = new Parallelepiped(a_side, b_side, c_side);
+            parallelepiped.Outputting();
         }
-
 
     }
 
