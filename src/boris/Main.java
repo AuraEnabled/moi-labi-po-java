@@ -1,5 +1,6 @@
 package boris;
 import boris.Classes.Parallelepiped;
+import boris.Classes.Parallelepipeds;
 import boris.Classes.Rectangle;
 import boris.Classes.Rectangles;
 
@@ -34,12 +35,10 @@ public class Main {
             parallelepiped.Outputting();
         }
 
-//        Rectangles rectangles = new Rectangles();
-
-
+//
         Rectangles.rectangleCreation();
-//        out.println("\n\n" + Rectangles.miniRectangle[5].getA_side() + "\n\n");
         Rectangles.Outputting();
+        Parallelepipeds.Outputting();
     }
 
 

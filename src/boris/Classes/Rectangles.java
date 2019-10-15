@@ -23,8 +23,6 @@ public class Rectangles {
         miniRectangle[7] = new Rectangle(4.0d, 5.0d);
         miniRectangle[8] = new Rectangle(10.0d, 23.0d);
         miniRectangle[9] = new Rectangle(13.0d, 14.0d);
-
-        System.out.println("\n\n" + miniRectangle[5].getA_side() + "\n\n");
     }
 
 //  возврат средней площади
@@ -39,21 +37,11 @@ public class Rectangles {
             if(miniRectangle[i].Area() > sum /*getAverageArea()*/) iterator++;
         }
         return iterator;
-
     }
 
-//  подсчёт
-//    public int higherThanAverage(){
-//
-//    }
-
-    //  результат
+//  результат
     public static void Outputting(){
         System.out.println(getAverageArea());
-        System.out.println("\n\nNumber of rectangles with higher than intermediate is " + getAverageArea());
+        System.out.println("\n\nNumber of rectangles with area higher than intermediate is " + getAverageArea());
     }
-
-
-
-
 }
