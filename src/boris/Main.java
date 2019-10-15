@@ -1,8 +1,11 @@
 package boris;
 import boris.Classes.Parallelepiped;
 import boris.Classes.Rectangle;
+import boris.Classes.Rectangles;
 
 import java.util.Scanner;
+
+import static java.lang.System.*;
 
 public class Main {
 
@@ -12,12 +15,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Set \"a\" length");
-        Scanner aInner = new Scanner(System.in);
-        System.out.println("Set \"b\" length");
-        Scanner bInner = new Scanner(System.in);
-        System.out.println("Set \"с\" length");
-        Scanner cInner = new Scanner(System.in);
+        out.println("Set \"a\" length");
+        Scanner aInner = new Scanner(in);
+        out.println("Set \"b\" length");
+        Scanner bInner = new Scanner(in);
+        out.println("Set \"с\" length");
+        Scanner cInner = new Scanner(in);
 
         a_side = aInner.nextDouble();
         b_side = bInner.nextDouble();
@@ -31,6 +34,12 @@ public class Main {
             parallelepiped.Outputting();
         }
 
+//        Rectangles rectangles = new Rectangles();
+
+
+        Rectangles.rectangleCreation();
+//        out.println("\n\n" + Rectangles.miniRectangle[5].getA_side() + "\n\n");
+        Rectangles.Outputting();
     }
 
 

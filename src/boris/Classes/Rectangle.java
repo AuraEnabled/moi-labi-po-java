@@ -2,8 +2,28 @@ package boris.Classes;
 
 public class Rectangle {
 
+//  сеттеры
+
+    public void setA_side(double a_side) {
+        this.a_side = a_side;
+    }
+
+    public void setB_side(double b_side) {
+        this.b_side = b_side;
+    }
+
     private double a_side;
     private double b_side;
+
+//  геттеры
+    public double getA_side() {
+        return a_side;
+    }
+
+    public double getB_side() {
+        return b_side;
+    }
+
     private final int SAMEEDGES = 2;
 
     public Rectangle(double a_side, double b_side) {
@@ -20,7 +40,7 @@ public class Rectangle {
 //  площадь
     public double Area(){ return a_side * b_side; }
 
-//вывод на  э к р а н
+//  вывод на  э к р а н
     public void Outputting(){
         System.out.println("\n<>Rectangle<>\nDiagonal is " + Diagonal() + "\nPerimeter is " + Perimeter() + "\nArea is " + Area());
     }
