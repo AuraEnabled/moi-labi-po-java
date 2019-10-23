@@ -44,4 +44,10 @@ public class Rectangles {
         System.out.println(getAverageArea());
         System.out.println("\n\nNumber of rectangles with area higher than intermediate is " + getAverageArea());
     }
+
+
+    @Override
+    public String toString() {
+        return "\n\nNumber of rectangles with area higher than intermediate is " + getAverageArea();
+    }
 }

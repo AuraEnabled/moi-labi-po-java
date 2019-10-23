@@ -41,7 +41,13 @@ public class Rectangle {
     public double Area(){ return a_side * b_side; }
 
 //  вывод на  э к р а н
-    public void Outputting(){
-        System.out.println("\n<>Rectangle<>\nDiagonal is " + Diagonal() + "\nPerimeter is " + Perimeter() + "\nArea is " + Area());
+//    public void Outputting(){
+//        System.out.println("\n<>Rectangle<>\nDiagonal is " + Diagonal() + "\nPerimeter is " + Perimeter() + "\nArea is " + Area());
+//    }
+
+
+    @Override
+    public String toString() {
+        return "\n<>Rectangle<>\nDiagonal is " + Diagonal() + "\nPerimeter is " + Perimeter() + "\nArea is " + Area();
     }
 }

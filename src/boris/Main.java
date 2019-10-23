@@ -29,10 +29,10 @@ public class Main {
 
         if(c_side < 1e-6) {
             Rectangle rectangle = new Rectangle(a_side, b_side);
-            rectangle.Outputting();
+            out.println(rectangle);
         }else {
             Parallelepiped parallelepiped = new Parallelepiped(a_side, b_side, c_side);
-            parallelepiped.Outputting();
+            out.println(parallelepiped);
         }
 
 //

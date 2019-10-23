@@ -50,8 +50,13 @@ public class Parallelepiped extends Rectangle {
     public double Area() { return (a_side * b_side + b_side * c_side + c_side * a_side) * SIMILAR_FLATS; }/*return super.Area();*/
 
 
-    public void Outputting(){
-        System.out.println("\n<>Parallelepiped<>\nVolume is " + Volume() + "\nArea is " + Area());
-    }
+//    public void Outputting(){
+//        System.out.println("\n<>Parallelepiped<>\nVolume is " + Volume() + "\nArea is " + Area());
+//    }
 
+
+    @Override
+    public String toString() {
+        return "\n<>Parallelepiped<>\nVolume is " + Volume() + "\nArea is " + Area();
+    }
 }
