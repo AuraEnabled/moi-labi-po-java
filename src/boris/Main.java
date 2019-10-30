@@ -9,13 +9,13 @@ import java.util.Scanner;
 import static java.lang.System.*;
 
 public class Main {
-
-    private static double a_side;
-    private static double b_side;
-    private static double c_side;
-
-
     public static void main(String[] args) {
+    double a_side;
+    double b_side;
+    double c_side;
+
+
+
         out.println("Set \"a\" length");
         Scanner aInner = new Scanner(in);
         out.println("Set \"b\" length");
